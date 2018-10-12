@@ -46,13 +46,23 @@
         </service>
 
         <activity
-            android:name=".DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main">
+            android:name=".DozeSettings"
+            android:label="@string/zukdoze_display_title"
+            android:summary="@string/zukdoze_display_summary"
+            android:theme="@android:style/Theme.DeviceDefault.Settings">
             <intent-filter>
                 <action android:name="org.carbonrom.settings.device.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.homepage" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_doze" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/zukdoze_display_summary" />
         </activity>
 
     </application>
