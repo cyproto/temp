@@ -173,3 +173,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# Disable rescue party
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.disable_rescue=true
