@@ -13,3 +13,6 @@ ro.min_freq_4                 u:object_r:freq_prop:s0
 
 # Qseecomd
 sys.listeners.registered                                      u:object_r:vendor_tee_listener_prop:s0
+
+wlan.driver.ath            u:object_r:wcnss_prop:s0
+wlan.driver.config         u:object_r:wcnss_prop:s0
